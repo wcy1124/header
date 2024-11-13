@@ -50,4 +50,18 @@ document.addEventListener('DOMContentLoaded', function() {
         projectElement.classList.toggle('active');
         projectContent.classList.toggle('active');
     });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 1000) {
+            projectElement.classList.remove('active');
+            projectContent.classList.remove('active');
+            logoElement.classList.remove('active');
+            logoContent.classList.remove('active');
+            logoSort.classList.remove('active');
+            hamburger.classList.remove('active');
+            hamburger.classList.remove('close');
+            arrow.classList.remove('active');
+            list.classList.remove('open');
+        }
+    });
 });
