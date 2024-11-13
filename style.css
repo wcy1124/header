@@ -78,15 +78,7 @@ html,body{
     height: auto;
 }
 .hamburger-menu{
-    position: fixed;
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 43px;
-    z-index: 99;
-    transition: all 0.3s ease;
 }
 .bar{
     margin: 2px 0;
@@ -180,8 +172,16 @@ html,body{
         background-color: white;
     }
     .hamburger-menu{
-        right: 0;
+        position: fixed;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 43px;
+        right: 0;
+        z-index: 99;
+        transition: all 0.3s ease;
     }
     .hamburger-menu.active{
         display: none;
